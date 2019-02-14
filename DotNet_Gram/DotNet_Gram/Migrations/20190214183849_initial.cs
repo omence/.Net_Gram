@@ -21,6 +21,16 @@ namespace DotNet_Gram.Migrations
                 {
                     table.PrimaryKey("PK_NetGrams", x => x.ID);
                 });
+
+            migrationBuilder.InsertData(
+                table: "NetGrams",
+                columns: new[] { "ID", "Caption", "ImageURL", "NamePoster" },
+                values: new object[] { 1, "pic", "url", "Jason" });
+
+            migrationBuilder.InsertData(
+                table: "NetGrams",
+                columns: new[] { "ID", "Caption", "ImageURL", "NamePoster" },
+                values: new object[] { 2, "pic", "URL", "Jennifer" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

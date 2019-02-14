@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotNet_Gram.Migrations
 {
     [DbContext(typeof(NetGramDbContext))]
-    [Migration("20190213184225_initial")]
+    [Migration("20190214183849_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,22 @@ namespace DotNet_Gram.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("NetGrams");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            Caption = "pic",
+                            ImageURL = "url",
+                            NamePoster = "Jason"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            Caption = "pic",
+                            ImageURL = "URL",
+                            NamePoster = "Jennifer"
+                        });
                 });
 #pragma warning restore 612, 618
         }
