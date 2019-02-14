@@ -15,4 +15,12 @@ h1 {
 img {
     height: 500px;
     width: auto;
+    border-radius: 30px;
+}
+
+section{
+    margin-bottom: 100px;
+}
+#new{
+    margin-bottom: 100px;
 }

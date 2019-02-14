@@ -22,6 +22,9 @@ namespace DotNet_Gram
 
         public Startup(IConfiguration configuration)
         {
+            var builder = new ConfigurationBuilder().AddEnvironmentVariables();
+            builder.AddUserSecrets<Startup>();
+            Configuration = builder.Build();
             Configuration = configuration;
         }
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -30,7 +33,7 @@ namespace DotNet_Gram
         {
             services.AddMvc();
 
-            services.AddDbContext<NetGramDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<NetGramDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:ProductionConnection"]));
 
             services.AddScoped<IGram, NetGramManager>();
 

@@ -7,17 +7,19 @@
     var netGrams = await NetGramManager.GetAllNetGrams();
     Layout = "_Layout";
 }
-<div>
+<div id="new">
 <h3><a asp-page="/NetGrams/Manage">ADD NEW NET GRAM</a></h3>
     </div>
 
 @foreach(var i in netGrams)
 {
+    <section>
     <h3>@i.NamePoster</h3>
     <p>@i.Caption</p>
     <img src=@i.ImageURL>
 
     <a asp-page="/NetGrams/Index" asp-route-id="@i.ID">See Details</a>
+        </section>
 }
     
     
