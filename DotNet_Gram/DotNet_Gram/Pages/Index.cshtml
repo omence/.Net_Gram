@@ -1,0 +1,20 @@
+﻿@page
+@using DotNet_Gram.Models.Interfaces;
+
+@inject IGram NetGramManager
+
+@{ 
+    var netGrams = await NetGramManager.GetAllNetGrams();
+}
+<h3><a asp-page="/NetGrams/Manage">ADD NEW NET GRAM</a></h3>
+@foreach(var i in netGrams)
+{
+    <h3>@i.NamePoster</h3>
+    <p>@i.Caption</p>
+    <p>@i.ImageURL</p>
+
+    <a asp-page="/NetGrams/Index" asp-route-id="@i.ID">@i.NamePoster</a>
+}
+    
+    
+    

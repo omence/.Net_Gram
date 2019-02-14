@@ -1,0 +1,23 @@
+﻿@page "{id?}"
+@model DotNet_Gram.Pages.NetGrams.ManageModel
+@{
+    ViewData["Title"] = "Manage";
+ }
+
+<h1>Manage</h1>
+
+<form method="post">
+    <label asp-for="NetGram.NamePoster"></label>
+    <input asp-for="NetGram.NamePoster" />
+
+    <label asp-for="NetGram.Caption"></label>
+    <input asp-for="NetGram.Caption" />
+
+    <label asp-for="NetGram.ImageURL"></label>
+    <input asp-for="NetGram.ImageURL" />
+
+    <button type="submit">SAVE</button>
+    <button type="submit" asp-page-handler="Delete">DELETE</button>
+
+
+</form>

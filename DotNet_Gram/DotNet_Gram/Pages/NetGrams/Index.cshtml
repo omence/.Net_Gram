@@ -1,0 +1,18 @@
+﻿@page "{id}"
+@model DotNet_Gram.Pages.NetGrams.IndexModel
+@{
+}
+
+<div>
+    <label asp-for="NetGram.NamePoster">@Model.NetGram.NamePoster</label>
+</div>
+
+<div>
+    <label asp-for="NetGram.Caption">@Model.NetGram.Caption</label>
+</div>
+
+<div>
+    <label asp-for="NetGram.ImageURL">@Model.NetGram.ImageURL</label>
+</div>
+
+<a asp-page="/NetGrams/Manage" asp-route-id="@Model.NetGram.ID">EDIT</a>
