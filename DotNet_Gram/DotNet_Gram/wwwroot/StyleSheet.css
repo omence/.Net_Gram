@@ -1,0 +1,18 @@
+﻿html {
+    
+    background-color: azure;
+}
+
+
+body {
+    text-align: center;
+    background-color: azure;
+}
+
+h1 {
+    margin: 50px;
+}
+img {
+    height: 500px;
+    width: auto;
+}

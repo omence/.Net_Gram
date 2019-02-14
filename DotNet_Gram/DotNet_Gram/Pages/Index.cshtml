@@ -5,15 +5,19 @@
 
 @{ 
     var netGrams = await NetGramManager.GetAllNetGrams();
+    Layout = "_Layout";
 }
+<div>
 <h3><a asp-page="/NetGrams/Manage">ADD NEW NET GRAM</a></h3>
+    </div>
+
 @foreach(var i in netGrams)
 {
     <h3>@i.NamePoster</h3>
     <p>@i.Caption</p>
-    <p>@i.ImageURL</p>
+    <img src=@i.ImageURL>
 
-    <a asp-page="/NetGrams/Index" asp-route-id="@i.ID">@i.NamePoster</a>
+    <a asp-page="/NetGrams/Index" asp-route-id="@i.ID">See Details</a>
 }
     
     

@@ -3,10 +3,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="~/StyleSheet.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Welcome to .Net Gram</h1>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="navbar-brand">Home</a>
+        </nav>
+    </header>
     <div>
         @RenderBody()
     </div>
