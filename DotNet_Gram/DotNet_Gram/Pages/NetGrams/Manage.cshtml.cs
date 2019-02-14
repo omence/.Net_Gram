@@ -45,7 +45,7 @@ namespace DotNet_Gram.Pages.NetGrams
         public async Task<IActionResult> OnPostDelete()
         {
             await _netGram.Delete(ID.Value);
-            return RedirectToPage("/NetGrams/Index");
+            return RedirectToPage("/Index");
         }
     }
 }

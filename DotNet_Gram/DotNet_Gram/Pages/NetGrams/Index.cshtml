@@ -1,6 +1,7 @@
 ﻿@page "{id}"
 @model DotNet_Gram.Pages.NetGrams.IndexModel
 @{
+    Layout = "_Layout";
 }
 
 <div>
@@ -12,7 +13,7 @@
 </div>
 
 <div>
-    <label asp-for="NetGram.ImageURL">@Model.NetGram.ImageURL</label>
+    <img src=@Model.NetGram.ImageURL>
 </div>
 
 <a asp-page="/NetGrams/Manage" asp-route-id="@Model.NetGram.ID">EDIT</a>
