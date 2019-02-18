@@ -17,12 +17,12 @@ Tools used, C#, ASP.NET Core, SystemIO, Bootstrap, and a shared HTML Layout.
 
 The user will land on the home page, where they have the option to manage any of the options shown in the nav bar.
 
-![image]()
+![image](https://github.com/omence/.Net_Gram/blob/master/Screenshot%20(15).png)
 
 Next they can view all the current hotels in this case.  They are given the option to Create, Edit and delete.
 
-![image]()
+![image](https://github.com/omence/.Net_Gram/blob/master/Screenshot%20(16).png)
 
 This shows the create new page.
 
-![image]()
+![image](https://github.com/omence/.Net_Gram/blob/master/Screenshot%20(17).png)
