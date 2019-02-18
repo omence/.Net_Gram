@@ -13,7 +13,7 @@ I have created a new Web Application, completed the Schema for the Database, mad
 
 
 
-Tools used, C#, ASP.NET Core, SystemIO, Bootstrap, and a shared HTML Layout.
+Tools used, C#, ASP.NET Core, SystemIO, Bootstrap, and a shared HTML Layout razor pages.
 
 The user will land on the home page, where they have the option to manage any of the options shown in the nav bar.
 
