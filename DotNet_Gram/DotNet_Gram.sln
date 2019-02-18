@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet_Gram", "DotNet_Gram\DotNet_Gram.csproj", "{EEABB485-E1B6-4A7E-B28E-0363CCEEC86B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{29A20F7F-D46D-445D-92E8-07206BBED635}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EEABB485-E1B6-4A7E-B28E-0363CCEEC86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEABB485-E1B6-4A7E-B28E-0363CCEEC86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEABB485-E1B6-4A7E-B28E-0363CCEEC86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A20F7F-D46D-445D-92E8-07206BBED635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A20F7F-D46D-445D-92E8-07206BBED635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A20F7F-D46D-445D-92E8-07206BBED635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A20F7F-D46D-445D-92E8-07206BBED635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
