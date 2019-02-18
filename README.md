@@ -19,10 +19,9 @@ The user will land on the home page, where they have the option to manage any of
 
 ![image](https://github.com/omence/.Net_Gram/blob/master/Screenshot%20(15).png)
 
-Next they can view all the current hotels in this case.  They are given the option to Create, Edit and delete.
-
+Next they can upload theit image and add name and caption.
 ![image](https://github.com/omence/.Net_Gram/blob/master/Screenshot%20(16).png)
 
-This shows the create new page.
+They can add, edit and delete imaged from this page.
 
 ![image](https://github.com/omence/.Net_Gram/blob/master/Screenshot%20(17).png)
