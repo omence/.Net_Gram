@@ -7,15 +7,16 @@
 
 <h1>Manage</h1>
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
+
+    <label asp-for="Image"></label>
+    <input asp-for="Image" type="file"/>
+
     <label asp-for="NetGram.NamePoster"></label>
     <input asp-for="NetGram.NamePoster" />
 
     <label asp-for="NetGram.Caption"></label>
     <input asp-for="NetGram.Caption" />
-
-    <label asp-for="NetGram.ImageURL"></label>
-    <input asp-for="NetGram.ImageURL" />
 
     <button type="submit">SAVE</button>
     <button type="submit" asp-page-handler="Delete">DELETE</button>
